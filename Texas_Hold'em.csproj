@@ -1,0 +1,129 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{0A87E09A-ACEA-4139-9792-15D195DF5BF2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Texas_Hold_em</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Deck.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\objects\01\a4a72d4374e87505f5e48969265bc557e7cac2" />
+    <None Include=".git\objects\25\cc49d8a603a3c8fb4946412166499f8c45399b" />
+    <None Include=".git\objects\30\5a61b32852401cd28dd06fe185c6d1f62b916a" />
+    <None Include=".git\objects\37\ee7feedffa244c1f02e8b304539c352c7c5003" />
+    <None Include=".git\objects\38\1d2ecea00c0c14c60a9123e59650f9179a59e8" />
+    <None Include=".git\objects\3f\ce9ed77adec338474b1aa03fe931cf6d71d278" />
+    <None Include=".git\objects\46\b907f90d8f3b1d2d9496992da116b73aa829af" />
+    <None Include=".git\objects\4c\0d115716124169b4659e60ac0d055494f5b33b" />
+    <None Include=".git\objects\52\acd04c8755a7ec047e0f7748eec7b2a608b128" />
+    <None Include=".git\objects\69\25d44bc51fc7b3a834fcd7dcdee4d312cb53a1" />
+    <None Include=".git\objects\6b\7b886cfb42ea91121c78d98138f0402a5efe1a" />
+    <None Include=".git\objects\6b\93aae9e4e29ea4f2126d2e066d9d169e6cccf6" />
+    <None Include=".git\objects\79\1ce87e06fc9dd06f19f803706fda058cb14f88" />
+    <None Include=".git\objects\80\4f9a2220453f39aca6b02f20d0fe9b5f45ccc0" />
+    <None Include=".git\objects\87\b94cf61ed5948acdbcf2a8544fe564dbb719fe" />
+    <None Include=".git\objects\97\011ad1861429396850472eab44c3ad6d328614" />
+    <None Include=".git\objects\b3\5656fbe4579b8986d095e596fa3cba0117aab8" />
+    <None Include=".git\objects\b6\1c75e962e7934203746363cee12a63a6f1c60d" />
+    <None Include=".git\objects\c1\9ee55c96d68ecc0426d128da378ac009ce43cd" />
+    <None Include=".git\objects\d9\f10ab63a1c477644b7aaffe653b9bce0f635a9" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e7\257c4d8fb8ca6adb043fc7822665617cf96acc" />
+    <None Include=".git\objects\ed\933bbea41cb1ca67e04e33051bfc36c1ea4059" />
+    <None Include=".git\objects\f8\b4888565caadc7510be75682268d6c18edd6de" />
+    <None Include=".git\objects\pack\pack-ba959b9e5ce427a97ca9895aacebd972ef1d0734.idx" />
+    <None Include=".git\objects\pack\pack-ba959b9e5ce427a97ca9895aacebd972ef1d0734.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\Texas_Hold%27em\FileContentIndex\25fb767f-6b17-4e52-8307-f98e6be6fa74.vsidx" />
+    <None Include=".vs\Texas_Hold%27em\FileContentIndex\42d12a33-2f69-4820-bc38-3624d87c982e.vsidx" />
+    <None Include=".vs\Texas_Hold%27em\FileContentIndex\45f7ba1f-1fd2-4e19-9702-9b88ac35cb89.vsidx" />
+    <None Include=".vs\Texas_Hold%27em\FileContentIndex\6a876a81-46c7-46ed-9ecd-06be1b9d3e25.vsidx" />
+    <None Include=".vs\Texas_Hold%27em\FileContentIndex\read.lock" />
+    <None Include=".vs\Texas_Hold%27em\v17\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="app.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Texas_Hold%27em\FileContentIndex\merges\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

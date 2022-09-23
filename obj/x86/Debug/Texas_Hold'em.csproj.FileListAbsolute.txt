@@ -1,0 +1,8 @@
+D:\VisualStudioRepos\Texas_Hold'em\obj\x86\Debug\Texas_Hold'em.csproj.AssemblyReference.cache
+D:\VisualStudioRepos\Texas_Hold'em\obj\x86\Debug\Texas_Hold'em.csproj.SuggestedBindingRedirects.cache
+D:\VisualStudioRepos\Texas_Hold'em\obj\x86\Debug\Texas_Hold'em.csproj.CoreCompileInputs.cache
+D:\VisualStudioRepos\Texas_Hold'em\bin\Debug\ConsoleApplication.exe.config
+D:\VisualStudioRepos\Texas_Hold'em\bin\Debug\ConsoleApplication.exe
+D:\VisualStudioRepos\Texas_Hold'em\bin\Debug\ConsoleApplication.pdb
+D:\VisualStudioRepos\Texas_Hold'em\obj\x86\Debug\ConsoleApplication.exe
+D:\VisualStudioRepos\Texas_Hold'em\obj\x86\Debug\ConsoleApplication.pdb
