@@ -9,13 +9,18 @@ namespace Texas_Hold_em
     {
         public static void Main(string[] args)
         {
-            Chips theseChips = new Chips();
-            theseChips.CreatePlayerChips(6, 8000);
-
             Testing test = new Testing();
-            test.PrintChipsDict(theseChips.playerChips);
+            Deck thisDeck = new Deck();
+            thisDeck.cards = thisDeck.Shuffle();
+            thisDeck.DealHands(thisDeck.cards, 4);
+            thisDeck.Flop(thisDeck.cards, 0);
 
+            test.PrintHandsDict(thisDeck.hands);
 
+            foreach (string i in thisDeck.communCards)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }

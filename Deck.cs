@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Texas_Hold_em
 {
-    public class Deck
+    internal class Deck
     {
         public List<string> cards = new List<string>() {"♠A", "♠2", "♠3", "♠4", "♠5", "♠6", "♠7", "♠8", "♠9", "♠10", "♠J", "♠Q", "♠K",
                           "♥A", "♥2", "♥3", "♥4", "♥5", "♥6", "♥7", "♥8", "♥9", "♥10", "♥J", "♥Q", "♥K",
@@ -15,11 +15,15 @@ namespace Texas_Hold_em
 
         public Dictionary<int, List<string>> hands = new Dictionary<int, List<string>>();
 
+        public List<string> communCards = new List<string>();
+
+
         public List<string> Shuffle()
 		{
 			Random random = new Random();
 			return cards.OrderBy(x => random.Next()).ToList();
         }
+
 
         public Dictionary<int, List<string>> DealHands(List<string> thisDeck, int numOfPlayers)
         {
@@ -35,5 +39,13 @@ namespace Texas_Hold_em
             return hands;
         }
         
+
+        public void Flop(List<string> thisDeck, int numOfPlayers)
+        {
+            foreach (int i in Enumerable.Range((numOfPlayers * 2 + 1), 3))
+            {
+                communCards.Add(thisDeck[i]);
+            }
+        }
     }
 }
