@@ -11,10 +11,10 @@ namespace Texas_Hold_em
         {
             Testing test = new Testing();
             Deck thisDeck = new Deck();
-            thisDeck.cards = thisDeck.Shuffle();
             thisDeck.DealHands(thisDeck.cards, 4);
-            thisDeck.Flop(thisDeck.cards, 0);
-
+            thisDeck.Flop(thisDeck.cards, 4);
+            thisDeck.NextCard(thisDeck.cards, 4);
+            thisDeck.NextCard(thisDeck.cards, 4);
             test.PrintHandsDict(thisDeck.hands);
 
             foreach (string i in thisDeck.communCards)

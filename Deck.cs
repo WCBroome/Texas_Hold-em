@@ -40,11 +40,19 @@ namespace Texas_Hold_em
         }
         
 
-        public void Flop(List<string> thisDeck, int numOfPlayers)
+        public void Flop(List<string> cards, int numOfPlayers)
         {
-            foreach (int i in Enumerable.Range((numOfPlayers * 2 + 1), 3))
+            foreach (int i in Enumerable.Range((numOfPlayers * 2 + 2), 3))
             {
-                communCards.Add(thisDeck[i]);
+                communCards.Add(cards[i]);
+            }
+        }
+
+        public void NextCard(List<string> cards, int numOfPlayers)
+        {
+            foreach (int i in Enumerable.Range((numOfPlayers * 2 + 2 + communCards.Count), 1))
+            {
+                communCards.Add(cards[i]);
             }
         }
     }
